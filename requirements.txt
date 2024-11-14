@@ -40,8 +40,5 @@ ahcm==0.1
 ask-crawling==0.0.0
 forked-path==0.2.3
 anis-package==1.0.0
-hnzhu010506==0.0.1
-hnzhu010507==0.0.9
-hnzhu020201==0.0.1
 ifly-uiautotest==0.0.10
 
