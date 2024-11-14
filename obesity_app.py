@@ -91,7 +91,7 @@ metrics.accuracy_score(y_test,lg_p)
 
 # app building
 
-joblib.dump(rn,'obesity_model.joblib') # model saving
+
 
 def main():
     st.title('obesity/weight prediction')
