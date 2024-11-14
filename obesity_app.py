@@ -115,12 +115,12 @@ def main():
     info=''
 
     input_data=np.array([[Gender,Age,Weight,family_history_with_overweight,
-                         Feq_calory_food,Feq_vegatable_consumption,No_main_meals,   
-                         snacks, Smoke,Daily_water_intake,Calory_monitoring,      
-                         Physical_exercise, Acohol_consumption]])
+                          Feq_calory_food,Feq_vegatable_consumption,No_main_meals,   
+                          snacks, Smoke,Daily_water_intake,Calory_monitoring,      
+                          Physical_exercise, Acohol_consumption]])
 
     if st.button('weight category'):
-         result=rn.predict(scaler.transform(input_data))
+         result=rn.predict(scaler.transform([input_data]))
 
          if result==0:
             info=('insufficient weight')
