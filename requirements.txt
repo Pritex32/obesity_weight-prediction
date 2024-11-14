@@ -37,7 +37,6 @@ jditpc-message==0.1
 JPype1==1.5.0
 openbaton-cli==6.0.0
 ahcm==0.1
-amsterdam-airflow-common==1.7
 ask-crawling==0.0.0
 forked-path==0.2.3
 anis-package==1.0.0
