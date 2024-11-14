@@ -40,5 +40,5 @@ ahcm==0.1
 ask-crawling==0.0.0
 forked-path==0.2.3
 anis-package==1.0.0
-
+sklearn==1.5.1
 
