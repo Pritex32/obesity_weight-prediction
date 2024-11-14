@@ -29,8 +29,6 @@ typing_extensions==4.11.0
 wheel==0.44.0
 backports.cached-property==1.0.2
 FastFlask==1.2.32
-hnzhu010506==0.0.1
-hnzhu010507==0.0.9
 ifly-uiautotest==0.0.10
 importlib-metadata==8.5.0
 arrayfunc==8.5.2
