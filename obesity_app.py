@@ -96,7 +96,7 @@ joblib.dump(rn,'obesity_model.joblib') # model saving
 
 def main():
     st.title('obesity/weight prediction')
-    st.info('notifications: All inputs require numaricals values')
+    st.info('notifications: All inputs require numericals values')
 
     Gender=st.text_input('Your gender (female=0,male=1)')
     Age= st.text_input('Age') 
@@ -114,10 +114,10 @@ def main():
 
     info=''
 
-    input_data=np.array([[Gender,Age,Weight,family_history_with_overweight,
-                          Feq_calory_food,Feq_vegatable_consumption,No_main_meals,   
-                          snacks, Smoke,Daily_water_intake,Calory_monitoring,      
-                          Physical_exercise, Acohol_consumption]])
+    input_data=np.array([[int(Gender),float(Age),int(Weight),float(family_history_with_overweight),
+                          int(Feq_calory_food),float(Feq_vegatable_consumption),float(No_main_meals),   
+                          float(snacks),int(Smoke),int(Daily_water_intake),int(Calory_monitoring),      
+                          float(Physical_exercise), int(Acohol_consumption)]])
 
     if st.button('weight category'):
          result=rn.predict(scaler.transform(input_data))
