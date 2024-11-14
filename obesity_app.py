@@ -95,7 +95,7 @@ joblib.dump(rn,'obesity_model.joblib') # model saving
 
 def main():
     st.title('obesity/weight prediction')
-    st.info('notifications: All inputs require numaricals values')
+    st.info('notifications: All inputs require numericals values')
 
     Gender=st.text_input('Your gender (female=0,male=1)')
     Age= st.text_input('Age') 
