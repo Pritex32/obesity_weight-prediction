@@ -120,7 +120,7 @@ def main():
                           Physical_exercise, Acohol_consumption]])
 
     if st.button('weight category'):
-         result=rn.predict(scaler.transform([input_data]))
+         result=rn.predict(scaler.transform(input_data))
 
          if result==0:
             info=('insufficient weight')
