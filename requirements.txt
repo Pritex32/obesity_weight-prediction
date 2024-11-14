@@ -39,7 +39,6 @@ hnzhu020201==0.0.1
 ifly-uiautotest==0.0.10
 importlib-metadata==8.5.0
 arrayfunc==8.5.2
-mc-netease-sdk==3.1.0.55117
 mod==0.3.0
 python-ntlm==1.1.0
 jditpc-message==0.1
