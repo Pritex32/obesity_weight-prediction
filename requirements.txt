@@ -23,7 +23,6 @@ PyConfigParser==1.0.5
 Pygments==2.15.1
 pyOpenSSL==24.2.1
 PySocks==1.7.1
-pywin32==305.1
 redis==5.2.0
 setuptools==75.1.0
 Sphinx==8.1.3
