@@ -5,16 +5,14 @@ import streamlit as st
 
 df=pd.read_csv('ObesityDataSet_raw_and_data_sinthetic.csv')
 
-df.head()
 
-df.columns
 # column modifcation
 df.columns=['Gender', 'Age', 'Height', 'Weight', 'family_history_with_overweight',
        'Feq_calory_food', 'Feq_vegatable_consumption', 'No_main_meals', 'snacks', 
        'Smoke', 'Daily_water_intake', 'Calory_monitoring', 'Physical_exercise', 'TUE',
        'Acohol_consumption', 'Mode_of_transit', 'Obesity_status']
 
-df.isnull().sum() # no null values
+# no null values
 
 df.duplicated().sum()
 dfr=df.drop_duplicates(inplace=True) # dropping dupliacates
@@ -56,37 +54,19 @@ x_train.shape,x_test.shape,y_train.shape,y_test.shape
 x_train=scaler.fit_transform(x_train)
 x_test=scaler.transform(x_test)
 
-tree=DecisionTreeClassifier()
-knn=KNeighborsClassifier(3)
 rn=RandomForestClassifier(n_estimators=200)
-lg=LogisticRegression(max_iter=5)
-
-tree.fit(x_train,y_train)
-knn.fit(x_train,y_train)
 rn.fit(x_train,y_train)
-lg.fit(x_train,y_train)
-
-tree.score(x_train,y_train)
-knn.score(x_train,y_train)
 rn.score(x_train,y_train)
-lg.score(x_train,y_train)
 
 #evaluations
-
-tree_p=tree.predict(x_test)
-knn_p=knn.predict(x_test)
 rn_p=rn.predict(x_test)
-lg_p=lg.predict(x_test)
+
 
 from sklearn import metrics
 
-metrics.accuracy_score(y_test,tree_p)
-
-metrics.accuracy_score(y_test,knn_p)
 
 metrics.accuracy_score(y_test,rn_p)
 
-metrics.accuracy_score(y_test,lg_p)
 
 
 # app building
