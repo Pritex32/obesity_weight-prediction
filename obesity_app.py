@@ -40,16 +40,11 @@ y=df['Obesity_status']
 
 from sklearn.preprocessing import StandardScaler
 from sklearn .model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn .linear_model import LogisticRegression
-from sklearn .tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
 scaler=StandardScaler()
 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
-
-x_train.shape,x_test.shape,y_train.shape,y_test.shape
 
 x_train=scaler.fit_transform(x_train)
 x_test=scaler.transform(x_test)
@@ -58,14 +53,9 @@ rn=RandomForestClassifier(n_estimators=200)
 rn.fit(x_train,y_train)
 rn.score(x_train,y_train)
 
-#evaluations
-rn_p=rn.predict(x_test)
 
 
-from sklearn import metrics
 
-
-metrics.accuracy_score(y_test,rn_p)
 
 
 
