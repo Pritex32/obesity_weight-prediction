@@ -9,7 +9,7 @@ The app uses a dataset collected from individuals in Mexico, Peru, and Colombia,
 - Predict obesity levels: Insufficient Weight, Normal Weight, Overweight, and Obesity Levels 1 to 3.
 - Analyze input data for trends and patterns.
 
-## Dataset Description
+## Dataset Description (Download)[https://github.com/Pritex32/obesity_weight-prediction/blob/main/ObesityDataSet_raw_and_data_sinthetic.csv]
 The dataset includes the following features:
 - Gender, Age, Height, Weight
 - Family history of obesity, Frequency of vegetable consumption, Number of meals per day
