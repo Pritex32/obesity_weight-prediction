@@ -51,7 +51,7 @@ x_test=scaler.transform(x_test)
 
 rn=RandomForestClassifier(n_estimators=200)
 rn.fit(x_train,y_train)
-rn.score(x_train,y_train)
+
 
 
 
