@@ -17,6 +17,7 @@ The dataset includes the following features:
 - Obesity status (target variable).
 
 ## Installation
+install dependencies (https://github.com/Pritex32/obesity_weight-prediction/blob/main/requirements.txt)
 1. Clone this repository:
    ```bash
    git clone https://github.com/your_username/email_spam_streamlit_app.git
