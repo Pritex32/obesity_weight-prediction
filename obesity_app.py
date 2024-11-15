@@ -99,7 +99,7 @@ def main():
 
     Gender=st.text_input('Your gender (female=0,male=1)')
     Age= st.text_input('Age') 
-    Weight=st.text_input('Input your weight')
+    Weight=st.text_input('Input your weight(kg)')
     family_history_with_overweight=st.text_input('Do you have family history with overweight (yes=1,no=0)')
     Feq_calory_food=st.text_input('Do you eat calory foods (yes=1,no=0)')
     Feq_vegatable_consumption=st.text_input('How often do you eat vegetables (e.g,1,2,3,4,2.5)')
