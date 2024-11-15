@@ -31,7 +31,7 @@ The dataset includes the following features:
    ```
 4. Run the app:
    ```bash
-   streamlit run app.py
+   streamlit run email_app.py
    ```
 
 ## Usage
